@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="background_image">
+            <h1>Basic Web Design</h1>
+            <p>This is ment to be a quick reference for later more complex projects.</p>
+        </div>
+    </div>
+
+    <div class="project_creation">
+      <p>Create a projects folder to house all of your projects, usually on c:\ drive</p>
+        <ul>
+          <li>Name the folder (ie...C:\projects</li>
+          <li>Create a folder in this folder with the project name (ie...C:\projects\web_design</li>
+          <li>Within the web_design folder is where the index.html and style.css files will be</li>
+        </ul>
+    </div> 
+
+    <div class="editor_choice">
+      <p>Time to choose an editor for your coding</p>
+        <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
+        <a href="https://atom.io/" target="_blank">Atom</a>
+        <a href="https://brackets.io/" target="_blank">Brackets</a>
+    </div> 
+
+    <!--Begin html Template with index.html-->
+    <div class="html">
+        <p>The basic HTML begins with <span class="doc">!DOCTYPE html</span></p> 
+        <p>All HTML documents must start with a !DOCTYPE declaration. The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect. In HTML5, the <!DOCTYPE> declaration is simple:</p>
+        <p><span class="doc1">(I will be using Visual Studio Code screen shots for examples)</span></p>
+    </div> 
+
+        <img src="./resources/images/DOCTYPE_Screenshot.png" alt="html_SS"> 
+    <div class="element">
+        <p>HTML elements are created by using tags that define certain actions withing the HTML.</p>
+        <p>Below are a few <span class="doc1">BLUE</span> tags that are linked to MDN Web Docs for reference</p>
+    </div>
+    <!--Beginning of the tags table with MDN links-->
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            <tr></thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;table&gt;</span>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table" target="_blank">
+                </td>
+                <td>Table</td>
+                <td>The wrapper element for all HTML tables.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;thead&gt;</span>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">
+                </td>
+                <td>Table Head</td>
+                <td>The set of rows defining the column headers in a table.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tbody&gt;</span>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">
+                </td>
+                <td>Table Body</td>
+                <td>The set of rows containing actual table data.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tr&gt;</span>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">
+                </td>
+                <td>Table Row</td>
+                <td>The table row container.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;td&gt;</span>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">
+                </td>
+                <td>Table Data</td>
+                <td>The table row container.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tfoot&gt;</span>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/tfoot" target="_blank">
+                </td>
+                </td>
+                <td>Table Foot</td>
+                <td>The set of rows defining the footer in a table.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table Attributes</h2>
+    <table>
+            <thead>
+                <tr><th>Attribute</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr></thead>
+    <tbody>
+            <tr>
+                <td><span class="code">&lt;colspan&gt;</span>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-span" target="_blank"> 
+                </td>
+                <td>Column Span</td>
+                <td>Defines how many columns a td element should span..</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;rowspan&gt;</span>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/ariaRowSpan" target="_blank">
+                </td>
+                <td>Row Span</td>
+                <td>Defines how many rows a td element should span.</td>
+            </tr>
+    </tbody>
+    </table>
+    <!--Create the style.css-->
+    <div class="css">
+        <p>Style.CSS bring the beauty to a web page. It brings it fron Static to Dynamic with STYLE!</p>
+        <p>To use the stylesheet you must add a class to the HTML elements you want to style:</p>
+    </div>
+        <img src="./resources/images/Style_css_link.png" alt="Style_css_link">
+    <div class="css">
+        <p>Content division elements labels and seperates each elent to your unique style</p>
+        <p>Below are exaples of:</p>
+        <ul>
+
+            <li>The <span class="doc2">id</span> attribute specifies a unique <span class="doc2">id</span> for an HTML element. The value of the <span class="doc2">id</span> attribute must be unique within the HTML document.</li>
+            <li>The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific <span class="doc2">id</span>.</li>
+            <li>The syntax for <span class="doc2">id</span> is: write a hash character <span class="doc3">#</span>, followed by an <span class="doc2">id</span> name. Then, define the CSS properties within curly braces <span class="doc3">{}</span></li>
+            <li>In the following example we have an 
+               <span class="doc4">h1</span> element that points to the <span class="doc2">id</span> name "myHeader". This <span class="doc4">h1</span> element will be styled according to the <span class="doc4">#myHeader</span> style definition in the head section:</li>
+
+        </ul>
+        
+    </div>
+        <img src="./resources/images/id_css.png" alt="id_css">
+        <img src="./resources/images/css_id.png" alt="">
+
+        <!--Getting published with Github-->
+    <div class="css">
+             
+            <!--new button for github-->
+        <p>What is Github--
+            <form action="https://Github.com/" method="get" target="_blank"><button type="submit">Github</button>
+            </form>    
+
+        <p>GitHub is a code hosting platform for <span class="doc3">version control and collaboration</span>. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests.</p>
+
+        <iframe width="942" height="530" src="https://www.youtube.com/embed/GqNAD4XoZ6k" title="Git and GitHub for Beginners: GitHub basics, and how to use GitHub Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>Github allows for social interactions and community improvements of ones coding habits and techniques</p>
+
+    </div>
+</body>
+</html>
